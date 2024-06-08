@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         fontWeight: '800',
         marginTop: 20,
     },
-    dorpDownSelector: {
+   dorpDownSelector: {
         width: 300,
         height: 50,
         borderRadius: 10,
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingLeft: 15,
-        paddingRight: 15,
+        paddingRight: 15, 
     },
     icon: {
         width: 20,
