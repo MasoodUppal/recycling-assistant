@@ -96,8 +96,8 @@ const Learn = () => {
                         style={styles.image}
                         source={{ uri: item.image_url }}
                       />
-                      <Text style={styles.text1}>Catagorie:  {item.category}</Text>
-                      <Text>{item.article_content}</Text>
+                      <Text style={styles.dropdowntext1}>Catagorie:  {item.category}</Text>
+                      <Text style={styles.dropdowntext2}>{item.article_content}</Text>
                     </ScrollView>
                   </View>
                 )}
@@ -172,6 +172,14 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 150,
     alignSelf:'center',
+  },
+  dropdowntext1:{
+    color:'black',
+    alignSelf:'flex-start',
+    fontSize:20,
+  },
+  dropdowntext2:{
+    textAlign:'justify',
   }
 
 })
