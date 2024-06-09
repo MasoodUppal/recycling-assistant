@@ -44,6 +44,12 @@ const _Assistlayout = () => {
                         headerShown: true,
                     }}
                 />
+                <Stack.Screen
+                    name='materialView'
+                    options={{
+                        headerShown: true,
+                    }}
+                />
             </Stack>
             <StatusBar style='dark' />
         </>

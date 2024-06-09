@@ -5,6 +5,7 @@ import Custombutton from "../../mycomponents/Custombutton";
 import { useRouter, router } from "expo-router";
 import CustomAvatar from "../../mycomponents/CustomAvatar";
 import { StatusBar } from "expo-status-bar";
+import CustomMaterial from "../../mycomponents/CustomMaterial";
 
 const Home = () => {
   const data = { points_available: "200", waste_recycled_in_kg: "20" };
@@ -17,8 +18,8 @@ const Home = () => {
 
           <View style={styles.coinContainer}>
             <View style={styles.coincontainerdata}>
-              <Image 
-                source={require('../../assets/icons/coin.png')}
+              <Image
+                source={require("../../assets/icons/coin.png")}
                 style={styles.image}
               />
               <Text style={styles.coinDataText}>{data.points_available}</Text>
@@ -26,11 +27,13 @@ const Home = () => {
             </View>
             <View style={styles.bar}></View>
             <View style={styles.coincontainerdata}>
-              <Image 
-                source={require('../../assets/icons/bag.png')}
+              <Image
+                source={require("../../assets/icons/bag.png")}
                 style={styles.image}
               />
-              <Text style={styles.coinDataText}>{data.waste_recycled_in_kg}</Text>
+              <Text style={styles.coinDataText}>
+                {data.waste_recycled_in_kg}
+              </Text>
               <Text style={styles.coinText}>kg Recycled</Text>
             </View>
           </View>
@@ -39,20 +42,23 @@ const Home = () => {
             <Text style={{ fontSize: 20, fontWeight: "bold", marginLeft: 0 }}>
               Materials
             </Text>
-            <View style={styles.materialcontainer}>
-              <Text style={styles.materialcontainertext}>
-                material information
-              </Text>
-              <Text style={styles.materialcontainertext}>
-                material information
-              </Text>
-              <Text style={styles.materialcontainertext}>
-                material information
-              </Text>
-              <Text style={styles.materialcontainertext}>
-                material information
-              </Text>
+            <View style={{height:120,width:'90%'}}>
+              <CustomMaterial data="data from custom material" />
             </View>
+            {/* <View style={styles.materialcontainer}>
+              <Text style={styles.materialcontainertext}>
+                material information
+              </Text>
+              <Text style={styles.materialcontainertext}>
+                material information
+              </Text>
+              <Text style={styles.materialcontainertext}>
+                material information
+              </Text>
+              <Text style={styles.materialcontainertext}>
+                material information
+              </Text>
+            </View> */}
           </View>
 
           <View style={{ flexDirection: "row", width: 300 }}>
@@ -83,7 +89,7 @@ const Home = () => {
           </View>
         </View>
       </ScrollView>
-      <StatusBar style='dark' />
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };
@@ -103,7 +109,7 @@ const styles = StyleSheet.create({
   },
   coinContainer: {
     backgroundColor: "teal",
-    width: 300,
+    width: '90%',
     height: 120,
     borderRadius: 30,
     flexDirection: "row",
@@ -114,9 +120,9 @@ const styles = StyleSheet.create({
   },
   coinText: {
     textAlign: "center",
-    color:'white',
-    fontSize:15,
-    fontWeight:'500',
+    color: "white",
+    fontSize: 15,
+    fontWeight: "500",
   },
   bar: {
     backgroundColor: "white",
@@ -178,21 +184,20 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     borderRadius: 20,
   },
-  image:{
-    width:35,
-    height:35,
+  image: {
+    width: 35,
+    height: 35,
   },
-  coincontainerdata:{
-    alignSelf:'flex-start',
-    justifyContent:"center",
-    gap:5,
-    width:100,
-    height:'100%',
-    alignItems:'center'
+  coincontainerdata: {
+    alignSelf: "flex-start",
+    justifyContent: "center",
+    gap: 5,
+    width: 100,
+    height: "100%",
+    alignItems: "center",
   },
-  coinDataText:{
-    color:'white',
-    fontSize:20,
-  }
-  
+  coinDataText: {
+    color: "white",
+    fontSize: 20,
+  },
 });

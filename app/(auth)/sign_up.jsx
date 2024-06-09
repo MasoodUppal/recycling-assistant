@@ -16,7 +16,7 @@ const SignUP = () => {
   const submit = () => {
     console.log(form)
     router.push({
-      pathname:'./sign_up2',
+      pathname:'/sign_up2',
       params:{...form},
     });
   }
