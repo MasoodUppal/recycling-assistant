@@ -50,6 +50,12 @@ const _Assistlayout = () => {
                         headerShown: true,
                     }}
                 />
+                <Stack.Screen
+                    name='mapView'
+                    options={{
+                        headerShown: false,
+                    }}
+                />
             </Stack>
             <StatusBar style='dark' />
         </>

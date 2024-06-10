@@ -10,6 +10,10 @@ import CustomMaterial from "../../mycomponents/CustomMaterial";
 const Home = () => {
   const data = { points_available: "200", waste_recycled_in_kg: "20" };
 
+  const onDisposalPress=()=>{
+    router.push('/mapView')
+  }
+
   return (
     <SafeAreaView style={styles.safeareaviewstyle}>
       <ScrollView contentContainerStyle={{ height: "110%" }}>
@@ -66,6 +70,7 @@ const Home = () => {
               containerStyles={styles.disposalButton}
               textStyles={{ fontSize: 14 }}
               title={"Request Disposal"}
+              handlePress={onDisposalPress}
             />
             <Custombutton
               containerStyles={styles.shopButton}
