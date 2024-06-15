@@ -17,7 +17,7 @@ const _Assistlayout = () => {
                 <Stack.Screen
                     name='profilesetting'
                     options={{
-                        headerShown: true,
+                        headerShown: false,
                     }}
                 />
                 <Stack.Screen

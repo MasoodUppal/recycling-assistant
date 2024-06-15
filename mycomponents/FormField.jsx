@@ -5,11 +5,11 @@ const eye = require('../assets/icons/eye.png')
 const eyenot = require('../assets/icons/eyenot.png')
 
 
-const FormField = ({ title, value, placeholder, handleChangeText, keyboardType, otherStyles, ...props }) => {
+const FormField = ({ title, value, placeholder, handleChangeText, keyboardType, otherStyles,textStyles, ...props }) => {
   const [showpassword, setshowpassword] = useState(false);
   return (
     <View style={[styles.viewstyle1,otherStyles]}>
-      <Text style={styles.text1}>{title}</Text>
+      <Text style={[styles.text1,textStyles]}>{title}</Text>
       <View style={styles.viewstyle2}>
         <TextInput style={styles.text2}
           value={value}
