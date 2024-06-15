@@ -6,11 +6,9 @@ import { router } from "expo-router";
 import Custombutton from "../../mycomponents/Custombutton";
 
 const Profile = () => {
-  
   const logout = () => {
     router.replace("/sign_in");
   };
-
 
   return (
     <SafeAreaView>
@@ -47,7 +45,7 @@ const Profile = () => {
               style={{ width: 20, height: 20 }}
             />
           </TouchableOpacity>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             style={styles.touch}
             onPress={() => router.push("/support")}
           >
@@ -56,7 +54,7 @@ const Profile = () => {
               source={require("../../assets/icons/right-arrow.png")}
               style={{ width: 20, height: 20 }}
             />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <TouchableOpacity
             style={styles.touch}
             onPress={() => router.push("/policy")}
