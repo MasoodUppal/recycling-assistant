@@ -23,7 +23,7 @@ const _Assistlayout = () => {
                 <Stack.Screen
                     name='security'
                     options={{
-                        headerShown: true,
+                        headerShown: false,
                     }}
                 />
                 <Stack.Screen

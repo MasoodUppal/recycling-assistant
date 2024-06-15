@@ -2,7 +2,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { router, useNavigation } from 'expo-router'
 
-const CustomAvatar = () => {
+const CustomAvatar = ({addStyles}) => {
     const data = {
         email: "tess2@1gmail.com",
         name: "Name"
@@ -13,7 +13,7 @@ const CustomAvatar = () => {
     return (
         <>
 
-            <View style={{ width: 300, height: 50, width: '85%', flexDirection: 'row', gap: 10, justifyContent: 'space-between', alignItems: 'center' ,marginVertical:10}}>
+            <View style={[{ width: 300, height: 50, width: '85%', flexDirection: 'row', gap: 10, justifyContent: 'space-between', alignItems: 'center' ,marginVertical:10},addStyles]}>
 
                 <Image
                     source={require('../assets/avatar/man.png')}
