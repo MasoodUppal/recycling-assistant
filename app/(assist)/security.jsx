@@ -19,6 +19,7 @@ const security = () => {
     <SafeAreaView>
       <View style={styles.container1}>
       <CustomAvatar  addStyles={styles.avatar}/>
+      <Text style={styles.heading}>Security settings</Text>
       <FormField 
             title="Old password"
             placeholder='old password'
@@ -53,6 +54,15 @@ const styles = StyleSheet.create({
   },
   avatar:{
     alignSelf:'center',
+  },
+  heading: {
+    fontSize: 25,
+    fontWeight: "600",
+    alignSelf: "flex-start",
+    marginLeft: 30,
+    marginVertical: 5,
+    borderBottomWidth: 2,
+    borderBottomColor: "black",
   },
   middleText:{
     alignSelf:'center',
