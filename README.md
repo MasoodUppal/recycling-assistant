@@ -1,4 +1,6 @@
-# Welcome to your Expo app 👋
+# Welcome to Recycle karo a recycling assistant mobile app👋
+i will be adding the whole functionality video later in the mean time run yourself to try it out
+![WhatsApp Image 2024-09-17 at 07 54 03_ac50c7ab](https://github.com/user-attachments/assets/5cd6ef05-7a4a-4f35-adbd-5312e3782de6)
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
